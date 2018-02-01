@@ -1,0 +1,11 @@
+dataSource:
+  master:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:8889/yumoqdb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: 123456
+  cluster:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:8889/yumoqdb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: 123456

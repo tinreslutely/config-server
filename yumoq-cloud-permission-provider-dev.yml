@@ -1,3 +1,4 @@
+#DB CONFIG
 dataSource:
   master:
     driverClassName: com.mysql.jdbc.Driver
@@ -9,3 +10,13 @@ dataSource:
     url: jdbc:mysql://localhost:8889/yandb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: root
     password: 123456
+
+#SWAGGER CONFIG
+swagger:
+  title: Permission Provider接口文档
+  description: 提供权限管理功能接口
+  contact:
+    name: Lixy
+    url: www.yumoq.cn
+    emall: tinreslutely@hotmail.com
+  version: v1.0.0

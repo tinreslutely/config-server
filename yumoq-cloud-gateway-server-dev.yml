@@ -2,5 +2,5 @@ cors:
   allowedHeader: "*"
   allowedOrigins: "*"
   allowedCredentials: true
-  maxAge: 18000L
+  maxAge: 18000
   allowedMethod: "*"

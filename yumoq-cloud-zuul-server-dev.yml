@@ -1,0 +1,6 @@
+cors:
+  allowedHeader: "*"
+  allowedOrigins: "*"
+  allowedCredentials: true
+  maxAge: 18000L
+  allowedMethod: "*"

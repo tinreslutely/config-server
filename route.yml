@@ -1,0 +1,7 @@
+route:
+    menu:
+      get: /menu/get
+      detail: /menu/detail/{id}
+      add: /menu/add
+      edit: /menu/edit
+      remove: /menu/delete

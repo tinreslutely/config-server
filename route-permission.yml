@@ -68,7 +68,7 @@ permission:
               value: 菜单模型数据
               required: false
               dataType: String
-        remove: 
+        delete: 
           mapping:
             route: /menu/delete
             feign: /menu/delete

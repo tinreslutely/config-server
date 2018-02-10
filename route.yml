@@ -1,6 +1,9 @@
-route:
+permission:
+  provider:
+    name: 'yumoq-cloud-permission-provider'
+  route:
     menu:
-      get: /menu/get
+      get: /menu/get?name={name}&code={code}&sort={sort}&dir={dir}
       detail: /menu/detail/{id}
       add: /menu/add
       edit: /menu/edit

@@ -55,7 +55,7 @@ permission:
               code: detail
               value: 菜单模型数据
               required: false
-              dataType: String
+              dataType: Menu
         update: 
           mapping:
             route: /menu/edit
@@ -67,7 +67,7 @@ permission:
               code: detail
               value: 菜单模型数据
               required: false
-              dataType: String
+              dataType: Menu
         delete: 
           mapping:
             route: /menu/delete
@@ -79,4 +79,4 @@ permission:
               code: id
               value: 菜单id
               required: false
-              dataType: String 
+              dataType: Long 

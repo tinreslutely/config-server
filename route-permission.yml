@@ -16,22 +16,22 @@ permission:
               name: name
               value: 菜单名称
               required: false
-              dataType: String
+              dataType: string
             code:
               name: code
               value: 菜单编码
               required: false
-              dataType: String
+              dataType: string
             sort:
               name: sort
               value: 排序字段名
               required: false
-              dataType: String
+              dataType: string
             dir:
               name: dir
               value: 排序方式
               required: false
-              dataType: String
+              dataType: string
         getDetail: 
           mapping:
             route: /menu/detail
@@ -43,7 +43,7 @@ permission:
               code: id
               value: 菜单id
               required: true
-              dataType: Long
+              dataType: integer
         add: 
           mapping:
             route: /menu/add
@@ -79,4 +79,4 @@ permission:
               code: id
               value: 菜单id
               required: false
-              dataType: Long 
+              dataType: integer 

@@ -1,0 +1,79 @@
+permission:
+  provider:
+    name: 'yumoq-cloud-permission-provider'
+  api:
+    menu:
+      name: 菜单
+      method:
+        find: 
+          mapping:
+            route: /menu/get
+            feign: /menu/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 菜单列表
+          apiNotes: 根据条件获取所有的菜单列表数据
+          apiParams:
+            name:
+              code: name
+              value: 菜单名称
+              required: false
+              dataType: String
+            code:
+              code: code
+              value: 菜单编码
+              required: false
+              dataType: String
+            sort:
+              code: sort
+              value: 排序字段名
+              required: false
+              dataType: String
+            dir:
+              code: dir
+              value: 排序方式
+              required: false
+              dataType: String
+        getDetail: 
+          mapping:
+            route: /menu/detail
+            feign: /menu/detail/{id}
+          apiName: 获取菜单详细数据
+          apiNotes: 根据id条件获取菜单详细数据
+          apiParams:
+            id:
+              code: id
+              value: 菜单id
+              required: true
+              dataType: Long
+        add: 
+          route: /menu/add
+          feign: /menu/add
+          apiName: 新增菜单
+          apiNotes: 根据提交的数据新增菜单数据
+          apiParams:
+            detail:
+              code: detail
+              value: 菜单模型数据
+              required: false
+              dataType: String
+        update: 
+          route: /menu/edit
+          feign: /menu/edit
+          apiName: 编辑菜单
+          apiNotes: 根据提交的数据变更菜单数据
+          apiParams:
+            detail:
+              code: detail
+              value: 菜单模型数据
+              required: false
+              dataType: String
+        remove: 
+          route: /menu/delete
+          feign: /menu/delete
+          apiName: 删除菜单
+          apiNotes: 根据id条件删除指定的菜单数据
+          apiParams:
+            id:
+              code: id
+              value: 菜单id
+              required: false
+              dataType: String 

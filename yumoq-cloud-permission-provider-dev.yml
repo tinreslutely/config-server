@@ -2,8 +2,8 @@
 dataSource:
   master:
     package:
-      dao: com.yumoq.cloud.permission.dao.master
-      mapper: classpath:mapper/master/*.xml
+      dao: com.yumoq.cloud.permission.dao
+      mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
       url: jdbc:mysql://localhost:8889/yandb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
@@ -11,8 +11,8 @@ dataSource:
       password: 123456
   cluster:
     package:
-      dao: com.yumoq.cloud.permission.dao.cluster
-      mapper: classpath:mapper/cluster/*.xml
+      dao: com.yumoq.cloud.permission.dao
+      mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
       url: jdbc:mysql://localhost:8889/yandb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true

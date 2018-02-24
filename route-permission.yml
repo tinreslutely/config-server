@@ -48,3 +48,426 @@ permission:
           apiNotes: 根据id条件删除指定的菜单数据
           apiParams:
             id: 菜单id
+
+    action:
+      name: 方法动作
+      method:
+        find: 
+          mapping:
+            route: /action/get
+            feign: /action/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 方法动作列表
+          apiNotes: 根据条件获取所有的方法动作列表数据
+          apiParams:
+            name: 方法动作名称
+            code: 方法动作编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /action/detail
+            feign: /action/detail/{id}
+          apiName: 获取方法动作详细数据
+          apiNotes: 根据id条件获取方法动作详细数据
+          apiParams:
+            id: 方法动作id
+        add: 
+          mapping:
+            route: /action/add
+            feign: /action/add
+          apiName: 新增方法动作
+          apiNotes: 根据提交的数据新增方法动作数据
+          apiParams:
+            detail: 方法动作模型数据
+        update: 
+          mapping:
+            route: /action/edit
+            feign: /action/edit
+          apiName: 编辑方法动作
+          apiNotes: 根据提交的数据变更方法动作数据
+          apiParams:
+            detail: 方法动作模型数据
+        delete: 
+          mapping:
+            route: /action/delete
+            feign: /action/delete
+          apiName: 删除方法动作
+          apiNotes: 根据id条件删除指定的方法动作数据
+          apiParams:
+            id: 方法动作id
+            
+    field:
+      name: 字段
+      method:
+        find: 
+          mapping:
+            route: /field/get
+            feign: /field/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 字段列表
+          apiNotes: 根据条件获取所有的字段列表数据
+          apiParams:
+            name: 字段名称
+            code: 字段编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /field/detail
+            feign: /field/detail/{id}
+          apiName: 获取字段详细数据
+          apiNotes: 根据id条件获取字段详细数据
+          apiParams:
+            id: 字段id
+        add: 
+          mapping:
+            route: /field/add
+            feign: /field/add
+          apiName: 新增字段
+          apiNotes: 根据提交的数据新增字段数据
+          apiParams:
+            detail: 字段模型数据
+        update: 
+          mapping:
+            route: /field/edit
+            feign: /field/edit
+          apiName: 编辑字段
+          apiNotes: 根据提交的数据变更字段数据
+          apiParams:
+            detail: 字段模型数据
+        delete: 
+          mapping:
+            route: /field/delete
+            feign: /field/delete
+          apiName: 删除字段
+          apiNotes: 根据id条件删除指定的字段数据
+          apiParams:
+            id: 字段id
+            
+    group:
+      name: 用户组
+      method:
+        find: 
+          mapping:
+            route: /group/get
+            feign: /group/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 用户组列表
+          apiNotes: 根据条件获取所有的用户组列表数据
+          apiParams:
+            name: 用户组名称
+            code: 用户组编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /group/detail
+            feign: /group/detail/{id}
+          apiName: 获取用户组详细数据
+          apiNotes: 根据id条件获取用户组详细数据
+          apiParams:
+            id: 用户组id
+        add: 
+          mapping:
+            route: /group/add
+            feign: /group/add
+          apiName: 新增用户组
+          apiNotes: 根据提交的数据新增用户组数据
+          apiParams:
+            detail: 用户组模型数据
+        update: 
+          mapping:
+            route: /group/edit
+            feign: /group/edit
+          apiName: 编辑用户组
+          apiNotes: 根据提交的数据变更用户组数据
+          apiParams:
+            detail: 用户组模型数据
+        delete: 
+          mapping:
+            route: /group/delete
+            feign: /group/delete
+          apiName: 删除用户组
+          apiNotes: 根据id条件删除指定的用户组数据
+          apiParams:
+            id: 用户组id
+
+    interface:
+      name: 接口
+      method:
+        find: 
+          mapping:
+            route: /interface/get
+            feign: /interface/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 接口列表
+          apiNotes: 根据条件获取所有的接口列表数据
+          apiParams:
+            name: 接口名称
+            code: 接口编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /interface/detail
+            feign: /interface/detail/{id}
+          apiName: 获取接口详细数据
+          apiNotes: 根据id条件获取接口详细数据
+          apiParams:
+            id: 接口id
+        add: 
+          mapping:
+            route: /interface/add
+            feign: /interface/add
+          apiName: 新增接口
+          apiNotes: 根据提交的数据新增接口数据
+          apiParams:
+            detail: 接口模型数据
+        update: 
+          mapping:
+            route: /interface/edit
+            feign: /interface/edit
+          apiName: 编辑接口
+          apiNotes: 根据提交的数据变更接口数据
+          apiParams:
+            detail: 接口模型数据
+        delete: 
+          mapping:
+            route: /interface/delete
+            feign: /interface/delete
+          apiName: 删除接口
+          apiNotes: 根据id条件删除指定的接口数据
+          apiParams:
+            id: 接口id
+
+    organization:
+      name: 机构
+      method:
+        find: 
+          mapping:
+            route: /organization/get
+            feign: /organization/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 机构列表
+          apiNotes: 根据条件获取所有的机构列表数据
+          apiParams:
+            name: 机构名称
+            code: 机构编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /organization/detail
+            feign: /organization/detail/{id}
+          apiName: 获取机构详细数据
+          apiNotes: 根据id条件获取机构详细数据
+          apiParams:
+            id: 机构id
+        add: 
+          mapping:
+            route: /organization/add
+            feign: /organization/add
+          apiName: 新增机构
+          apiNotes: 根据提交的数据新增机构数据
+          apiParams:
+            detail: 机构模型数据
+        update: 
+          mapping:
+            route: /organization/edit
+            feign: /organization/edit
+          apiName: 编辑机构
+          apiNotes: 根据提交的数据变更机构数据
+          apiParams:
+            detail: 机构模型数据
+        delete: 
+          mapping:
+            route: /organization/delete
+            feign: /organization/delete
+          apiName: 删除机构
+          apiNotes: 根据id条件删除指定的机构数据
+          apiParams:
+            id: 机构id
+
+    permission:
+      name: 权限
+      method:
+        find: 
+          mapping:
+            route: /permission/get
+            feign: /permission/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 权限列表
+          apiNotes: 根据条件获取所有的权限列表数据
+          apiParams:
+            name: 权限名称
+            code: 权限编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /permission/detail
+            feign: /permission/detail/{id}
+          apiName: 获取权限详细数据
+          apiNotes: 根据id条件获取权限详细数据
+          apiParams:
+            id: 权限id
+        add: 
+          mapping:
+            route: /permission/add
+            feign: /permission/add
+          apiName: 新增权限
+          apiNotes: 根据提交的数据新增权限数据
+          apiParams:
+            detail: 权限模型数据
+        update: 
+          mapping:
+            route: /permission/edit
+            feign: /permission/edit
+          apiName: 编辑权限
+          apiNotes: 根据提交的数据变更权限数据
+          apiParams:
+            detail: 权限模型数据
+        delete: 
+          mapping:
+            route: /permission/delete
+            feign: /permission/delete
+          apiName: 删除权限
+          apiNotes: 根据id条件删除指定的权限数据
+          apiParams:
+            id: 权限id
+
+    role:
+      name: 角色
+      method:
+        find: 
+          mapping:
+            route: /role/get
+            feign: /role/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 角色列表
+          apiNotes: 根据条件获取所有的角色列表数据
+          apiParams:
+            name: 角色名称
+            code: 角色编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /role/detail
+            feign: /role/detail/{id}
+          apiName: 获取角色详细数据
+          apiNotes: 根据id条件获取角色详细数据
+          apiParams:
+            id: 角色id
+        add: 
+          mapping:
+            route: /role/add
+            feign: /role/add
+          apiName: 新增角色
+          apiNotes: 根据提交的数据新增角色数据
+          apiParams:
+            detail: 角色模型数据
+        update: 
+          mapping:
+            route: /role/edit
+            feign: /role/edit
+          apiName: 编辑角色
+          apiNotes: 根据提交的数据变更角色数据
+          apiParams:
+            detail: 角色模型数据
+        delete: 
+          mapping:
+            route: /role/delete
+            feign: /role/delete
+          apiName: 删除角色
+          apiNotes: 根据id条件删除指定的角色数据
+          apiParams:
+            id: 角色id
+
+    system:
+      name: 系统
+      method:
+        find: 
+          mapping:
+            route: /system/get
+            feign: /system/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 系统列表
+          apiNotes: 根据条件获取所有的系统列表数据
+          apiParams:
+            name: 系统名称
+            code: 系统编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /system/detail
+            feign: /system/detail/{id}
+          apiName: 获取系统详细数据
+          apiNotes: 根据id条件获取系统详细数据
+          apiParams:
+            id: 系统id
+        add: 
+          mapping:
+            route: /system/add
+            feign: /system/add
+          apiName: 新增系统
+          apiNotes: 根据提交的数据新增系统数据
+          apiParams:
+            detail: 系统模型数据
+        update: 
+          mapping:
+            route: /system/edit
+            feign: /system/edit
+          apiName: 编辑系统
+          apiNotes: 根据提交的数据变更系统数据
+          apiParams:
+            detail: 系统模型数据
+        delete: 
+          mapping:
+            route: /system/delete
+            feign: /system/delete
+          apiName: 删除系统
+          apiNotes: 根据id条件删除指定的系统数据
+          apiParams:
+            id: 系统id
+
+    user:
+      name: 用户
+      method:
+        find: 
+          mapping:
+            route: /user/get
+            feign: /user/get?name={name}&code={code}&sort={sort}&dir={dir}
+          apiName: 用户列表
+          apiNotes: 根据条件获取所有的用户列表数据
+          apiParams:
+            name: 用户名称
+            code: 用户编码
+            sort: 排序字段名
+            dir: 排序方式 
+        getDetail: 
+          mapping:
+            route: /user/detail
+            feign: /user/detail/{id}
+          apiName: 获取用户详细数据
+          apiNotes: 根据id条件获取用户详细数据
+          apiParams:
+            id: 用户id
+        add: 
+          mapping:
+            route: /user/add
+            feign: /user/add
+          apiName: 新增用户
+          apiNotes: 根据提交的数据新增用户数据
+          apiParams:
+            detail: 用户模型数据
+        update: 
+          mapping:
+            route: /user/edit
+            feign: /user/edit
+          apiName: 编辑用户
+          apiNotes: 根据提交的数据变更用户数据
+          apiParams:
+            detail: 用户模型数据
+        delete: 
+          mapping:
+            route: /user/delete
+            feign: /user/delete
+          apiName: 删除用户
+          apiNotes: 根据id条件删除指定的用户数据
+          apiParams:
+            id: 用户id

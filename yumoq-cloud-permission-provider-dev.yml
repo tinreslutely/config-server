@@ -23,6 +23,7 @@ dataSource:
 swagger:
   title: Permission Provider接口文档
   description: 提供权限管理CURD功能接口
+  basePackage: com.yumoq.cloud.permission.provider.controller
   contact:
     name: Lixy
     url: www.yumoq.cn

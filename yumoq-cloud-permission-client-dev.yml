@@ -2,6 +2,7 @@
 swagger:
   title: Permission Client接口文档
   description: 提供权限管理接口功能
+  basePackage: com.yumoq.cloud.permission.client.controller
   contact:
     name: Lixy
     url: www.yumoq.cn

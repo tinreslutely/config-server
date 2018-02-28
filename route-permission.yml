@@ -1,6 +1,6 @@
 permission:
   provider:
-    name: 'yumoq-cloud-permission-provider'
+    name: yumoq-cloud-permission-provider
   api:
     menu:
       name: 菜单

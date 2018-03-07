@@ -18,7 +18,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /menu/detail
+            route: /menu/detail/{id}
             feign: /menu/detail/{id}
           apiName: 获取菜单详细数据
           apiNotes: 根据id条件获取菜单详细数据

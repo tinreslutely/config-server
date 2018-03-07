@@ -65,7 +65,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /action/detail
+            route: /action/detail/{id}
             feign: /action/detail/{id}
           apiName: 获取方法动作详细数据
           apiNotes: 根据id条件获取方法动作详细数据
@@ -112,7 +112,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /field/detail
+            route: /field/detail/{id}
             feign: /field/detail/{id}
           apiName: 获取字段详细数据
           apiNotes: 根据id条件获取字段详细数据
@@ -159,7 +159,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /group/detail
+            route: /group/detail/{id}
             feign: /group/detail/{id}
           apiName: 获取用户组详细数据
           apiNotes: 根据id条件获取用户组详细数据
@@ -206,7 +206,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /interface/detail
+            route: /interface/detail/{id}
             feign: /interface/detail/{id}
           apiName: 获取接口详细数据
           apiNotes: 根据id条件获取接口详细数据
@@ -253,7 +253,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /organization/detail
+            route: /organization/detail/{id}
             feign: /organization/detail/{id}
           apiName: 获取机构详细数据
           apiNotes: 根据id条件获取机构详细数据
@@ -300,7 +300,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /permission/detail
+            route: /permission/detail/{id}
             feign: /permission/detail/{id}
           apiName: 获取权限详细数据
           apiNotes: 根据id条件获取权限详细数据
@@ -347,7 +347,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /role/detail
+            route: /role/detail/{id}
             feign: /role/detail/{id}
           apiName: 获取角色详细数据
           apiNotes: 根据id条件获取角色详细数据
@@ -394,7 +394,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /system/detail
+            route: /system/detail/{id}
             feign: /system/detail/{id}
           apiName: 获取系统详细数据
           apiNotes: 根据id条件获取系统详细数据
@@ -441,7 +441,7 @@ permission:
             dir: 排序方式 
         getDetail: 
           mapping:
-            route: /user/detail
+            route: /user/detail/{id}
             feign: /user/detail/{id}
           apiName: 获取用户详细数据
           apiNotes: 根据id条件获取用户详细数据

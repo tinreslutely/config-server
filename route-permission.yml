@@ -337,7 +337,7 @@ permission:
         find: 
           mapping:
             route: /role/get
-            feign: /role/get?name={name}&code={code}&sort={sort}&dir={dir}
+            feign: /role/get?page={page}&limit={limit}&name={name}&code={code}&sort={sort}&dir={dir}
           apiName: 角色列表
           apiNotes: 根据条件获取所有的角色列表数据
           apiParams:

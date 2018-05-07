@@ -1,0 +1,10 @@
+#SWAGGER CONFIG
+swagger:
+  title: Promote Client接口文档
+  description: 提供活动服务接口功能
+  basePackage: com.yumoq.cloud.promote.client.controller
+  contact:
+    name: Lixy
+    url: www.yumoq.cn
+    email: tinreslutely@hotmail.com
+  version: v1.0.0

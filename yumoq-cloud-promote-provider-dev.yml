@@ -1,0 +1,31 @@
+#DB CONFIG
+dataSource:
+  master:
+    package:
+      dao: com.yumoq.cloud.promote.dao
+      mapper: classpath:mapper/*.xml
+    connection:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:8889/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: root
+      password: 123456
+  cluster:
+    package:
+      dao: com.yumoq.cloud.promote.dao
+      mapper: classpath:mapper/*.xml
+    connection:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:8889/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: root
+      password: 123456
+
+#SWAGGER CONFIG
+swagger:
+  title: Promote Provider接口文档
+  description: 提供活动CURD功能接口
+  basePackage: com.yumoq.cloud.promote.provider.controller
+  contact:
+    name: Lixy
+    url: www.yumoq.cn
+    email: tinreslutely@hotmail.com
+  version: v1.0.0

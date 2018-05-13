@@ -6,18 +6,18 @@ dataSource:
       mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:8889/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
-      username: root
-      password: 123456
+      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: ybj
+      password: Ybj-2018
   cluster:
     package:
       dao: com.yumoq.cloud.promote.dao
       mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:8889/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
-      username: root
-      password: 123456
+      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: ybj
+      password: Ybj-2018
 
 #SWAGGER CONFIG
 swagger:

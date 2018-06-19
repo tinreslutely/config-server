@@ -6,7 +6,7 @@ dataSource:
       mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      url: jdbc:mysql://rm-wz95s0144u17j500l0o.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
       username: ybj
       password: Ybj-2018
   cluster:
@@ -15,7 +15,7 @@ dataSource:
       mapper: classpath:mapper/*.xml
     connection:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      url: jdbc:mysql://rm-wz95s0144u17j500l0o.mysql.rds.aliyuncs.com/ybj?useUnicode=true&characterEncoding=utf8&autoReconnect=true
       username: ybj
       password: Ybj-2018
 

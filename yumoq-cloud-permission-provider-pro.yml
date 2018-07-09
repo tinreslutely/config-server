@@ -1,0 +1,31 @@
+#DB CONFIG
+dataSource:
+  master:
+    package:
+      dao: com.yumoq.cloud.permission.dao
+      mapper: classpath:mapper/*.xml
+    connection:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com:3306/yandb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: ybj
+      password: Ybj-2018
+  cluster:
+    package:
+      dao: com.yumoq.cloud.permission.dao
+      mapper: classpath:mapper/*.xml
+    connection:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://rm-wz95s0144u17j500l.mysql.rds.aliyuncs.com:3306/yandb_sys?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+      username: ybj
+      password: Ybj-2018
+
+#SWAGGER CONFIG
+swagger:
+  title: Permission Provider接口文档
+  description: 提供权限管理CURD功能接口
+  basePackage: com.yumoq.cloud.permission.provider.controller
+  contact:
+    name: Lixy
+    url: www.yumoq.cn
+    email: tinreslutely@hotmail.com
+  version: v1.0.0
